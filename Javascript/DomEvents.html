@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----------------------------------------------------->
+    <div id="box">
+    <button id="btn" onclick="btnClick()">click me</button>
+    </div>
+    <p onclick="paraClick()" >Click here to change the button inner text</p>
+    <button id="btnpara">hello</button>
+    <button id="btn1">click here</button>
+     <button id="btn2">click here</button>
+
+     <form id="myform">
+        <input type="text" id="liveInput">
+        <button type="submit">submit</button>
+     </form>
+     <input type="text" id="liveInput">
+    <script>
+        const liveValue=document.getElementById("liveInput")
+         liveValue.addEventListener("input",(e)=>{
+            console.log("current value:"+liveValue.value)
+         })
+        const form=document.getElementById("myform")
+        form.addEventListener("submit",(e)=>{
+              e.preventDefault();
+              console.log("form submitted");
+        });
+        
+        function btnClick(){
+        document.getElementById("box");
+        box.style.cssText=`
+                       background-color:red;
+                       width:100% ;
+                       padding:10px 0px;             
+        `;
+        document.getElementById("btn").innerText="hii";
+        btn.style.cssText=`
+                         background-color:red;
+                         color:white;
+                         `
+        }
+
+     function paraClick(){
+       document.getElementById("btnpara").innerHTML="text changed";
+       
+           btnpara.style.background="pink";
+     }
+    const btn1=document.getElementById("btn1")
+    
+        btn1.addEventListener("mouseleave",()=>{
+            btn1.style.color="blue"
+    });
+    const btn2=document.getElementById("btn2")
+    
+        btn2.addEventListener("keypress",(e)=>{
+            console.log(e.key);
+    });
+
+
+    
+    </script>
+</body>
+</html>

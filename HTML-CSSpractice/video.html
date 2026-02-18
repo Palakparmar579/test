@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+     .container {
+    margin: 0 auto;
+    width: 1255px;
+}
+.nav {
+    background-color: #5d403a;
+}
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    gap: 30%;
+}
+.nav-logo {
+    width: 16%;
+}
+
+.nav-logo h1 {
+    font-family: serif;
+    color: white;
+    font-size: 40px;
+}
+.nav-menu ul li {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 20px 25px;
+}
+
+
+.home-background {
+    position: relative;
+    height: 88vh;
+    overflow: hidden;
+}
+/* background video */
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(50%);
+}
+
+/* content on top of video */
+.home-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.home-heading h2 {
+    font-size: 31px;
+    color: sandybrown;
+}
+.home-heading h1 {
+    font-size: 85px;
+}
+.about {
+    background-color: #FFFBF2;
+    padding-top: 85px;
+}
+.about-heading h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #DA9F5B;
+}
+.about-heading h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 40px;
+}
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 45px;
+    width: 90%;
+}
+.about-left {
+    width: 32%;
+    padding: 55px 30px;
+}
+.about-left h1 {
+    padding-bottom: 35px;
+    font-size: 30px;
+}
+.about-center {
+    width: 40%;
+}
+.about-center img {
+    width: 100%;
+}
+.about-right {
+    width: 32%;
+    padding: 30px 30px;
+}
+.about-left h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+p.left-para1 {
+    line-height: 1.5;
+    font-size: 20px;
+}
+p.left-para2 {
+    line-height: 1.5;
+    color: gray;
+    padding: 20px 0;
+     font-size: 20px;
+}
+.about-left button {
+    padding: 15px 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+}
+.about-right h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+p.right-para1 {
+    line-height: 1.5;
+    color: gray;
+     font-size: 20px;
+}
+p.right-para2 {
+    padding-bottom: 36px;
+    font-size: 20px;
+    
+}
+.about-right button {
+    padding: 15px 20px;
+    color: black;
+    background-color: #DA9F5B;
+    border: none;
+    border-radius: 10px;
+}
+p.right-para2:before {
+    content: "\f00c";
+    font: normal normal normal 14px / 1 FontAwesome;
+    padding-right: 20px;
+    color:#DA9F5B;
+}
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav-main">
+        <div class="nav-logo">
+          <h1>Koppee</h1>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Page</li>
+            <li>Service</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="home">
+
+      
+        <div class="home-background">
+          <video class="bg-video"  autoplay  muted loop playsinline>
+            <source src="/videos/80134-572367417_medium.mp4" type="video/mp4" />
+          </video>
+        </div>
+        
+      <div class="container">
+        
+        <div class="home-content">
+          <div class="home-heading">
+            <h2>We Have Been Serving</h2>
+            <h1>COFFEE</h1>
+            <h2>* SINCE 1950 *</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container">
+      <div class="about-heading">
+        <h2>About Us</h2>
+        <h1>Serving Since 1950</h1>
+      </div>
+      <div class="about-content">
+      <div class="about-left">
+        <h1>Our Story</h1>
+        <p class="left-para1">
+          Eos kasd eos dolor vero vero, lorem stet diam rebum. Ipsum amet sed
+          vero dolor sea
+        </p>
+        <p class="left-para2">
+          Takimata sed vero vero no sit sed, justo clita duo no duo amet et,
+          nonumy kasd sed dolor eos diam lorem eirmod. Amet sit amet amet no.
+          Est nonumy sed labore eirmod sit magna. Erat at est justo sit ut.
+          Labor diam sed ipsum et eirmod
+        </p>
+        <button>Lern More</button>
+      </div>
+      <div class="about-center">
+        <img src="https://themewagon.github.io/Koppee/img/about.png" />
+      </div>
+      <div class="about-right">
+        <h1>Our Vision</h1>
+        <p class="right-para1">
+          Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor
+          lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo
+          sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
+        </p>
+        <p class="right-para2">Lorem ipsum dolor sit amet</p>
+        <p class="right-para2">Lorem ipsum dolor sit amet</p>
+        <p class="right-para2">Lorem ipsum dolor sit amet</p>
+        <button>Lern More</button>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div class="">
+      <ul>
+         <li>sgadfgfsdh</li>
+      </ul>
+     
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Example</title>
+
+<style>
+
+.main {
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container{
+    min-width: 1140px;
+    margin: 0;
+}
+.card {
+  background: white;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Pseudo-class :hover on parent */
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/*Descendant combinator (space)*/
+.card p {
+  color: #444;
+}
+
+/* Child combinator*/
+.card > h2 {
+  color: darkgreen;
+}
+
+/*  sibling combinator */
+h2 + p {
+  font-style: italic;
+}
+
+/*Subsequent-sibling combinator (~)*/
+h2 ~ button {
+  margin-top: 15px;
+}
+
+/* Pseudo-class hover */
+button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Pseudo-class nth-child */
+.card p:nth-child(2){
+  font-weight: bold;
+}
+
+/* Pseudo-element */
+h2::before {
+  content: "★ ";
+  color: orange;
+}
+
+/* Pseudo-element */
+button::after {
+  content: " →";
+}
+
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: teal;
+  color: white;
+  transition: 0.3s;
+}
+
+</style>
+</head>
+
+<body>
+  <div class="content">
+    <div class="container">
+        <div class="main">
+    <div class="card">
+  <h2>Welcome</h2>
+  <p>This is a simple combinator example.</p>
+  <button>Click Me</button>
+</div>
+
+<div class="card">
+  <h2>Another Card</h2>
+  <p>This is second paragraph.</p>
+  <button>Submit</button>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

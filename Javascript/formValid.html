@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.para{
+    color:red;
+    
+}
+</style>
+<body>
+    <div id="formValidation"></div>
+    <script>
+        let labelFname=document.createElement("label")
+             labelFname.textContent="Full Name";
+             
+        let inputFname=document.createElement("input")
+        inputFname.type="text"
+        inputFname.placeholder="Enter full name"
+        inputFname.id="fullname";
+        
+       let br1=document.createElement("br")
+       let para1=document.createElement("p")
+       
+       para1.className="para"
+       //--------------------------------------------------------------
+
+       let labelLname=document.createElement("label")
+             labelLname.textContent="Last Name";
+             
+       let inputLname=document.createElement("input")
+        inputLname.type="text"
+        inputLname.placeholder="Enter last name"
+        inputLname.id="lastname";
+         
+
+        let br2=document.createElement("br")
+         let para2=document.createElement("p")
+       
+       para2.className="para"
+        //--------------------------------------------------------------
+
+        let labelGend=document.createElement("label")
+             labelGend.textContent="Gender";
+             
+       let inputMale=document.createElement("input")
+        inputMale.type="radio"
+        inputMale.name="g1"
+        inputMale.id="male";
+       
+
+        let inputFemale=document.createElement("input")
+        inputFemale.type="radio"
+        inputFemale.name="g1"
+        inputFemale.id="female";
+        
+
+        let inputOthers=document.createElement("input")
+        inputOthers.type="radio"
+        inputOthers.name="g1"
+        inputOthers.id="others";
+        
+
+        let para3=document.createElement("p")
+       
+       para3.className="para"
+        //---------------------------------------------------------------
+
+        
+     let btn=document.createElement("button")
+     btn.className="submitbtn"
+     btn.textContent="Submit"
+     let parent=document.getElementById("formValidation")
+     parent.append(labelFname,inputFname,para1,br1,labelLname,inputLname,para2,br2,labelGend,inputMale,inputFemale,inputOthers,para3,btn)
+  
+
+
+
+    btn.addEventListener("click",()=>{
+           if(!inputFname.value){
+        para1.textContent="Please enter first name"
+    }
+    else{
+         para1.textContent=""
+    }
+      if(!inputLname.value){
+        para2.textContent="Please enter last name"
+    }
+    else{
+         para2.textContent=""
+    }
+   if(!inputMale.checked&& !inputFemale.checked&& !inputOthers.checked){
+        para3.textContent="Please enter your gender"
+    }
+    else{
+         para3.textContent=""
+    }
+
+    let obj={
+        fn:inputFname.value,
+        ln:inputLname.value,
+        gender:inputMale.checked?"Male":
+        inputFemale.checked?"female":
+        inputOthers.checked?"others":"",
+    }
+    console.log(obj)
+
+    inputFname.value=""
+    inputLname.value=""
+    inputMale.checked=false
+    inputFemale.checked=false
+    inputOthers.checked=false
+
+    
+    })
+    
+    </script>
+</body>
+</html>

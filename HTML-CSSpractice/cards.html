@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: black;
+        box-sizing: border-box;
+      }
+      .header {
+        padding: 24px;
+        display: flex;
+        align-items: center;
+      }
+      .logo {
+        width: 25%;
+        padding: 0px 0 0 70px;
+      }
+      .logo img {
+        width: 20%;
+        border-radius: 20px;
+        padding: 15px;
+      }
+      .menu {
+        display: inline;
+        width: 65%;
+      }
+      .menu ul li {
+        color: white;
+        text-decoration: none;
+        display: inline;
+        padding: 0 15px;
+      }
+      .header button {
+        background-color: #ffc107;
+        width: 24%;
+        padding: 9px;
+        border-radius: 20px;
+        height: 10vh;
+        border: 2px solid black;
+      }
+      .Home-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 22px;
+      }
+      .text-content {
+        width: 45%;
+      }
+      .btn1 {
+        color: white;
+        background-color: #5a5555;
+        padding: 0 41px;
+        height: 5vh;
+        border-radius: 20px;
+        border: none;
+      }
+      .music-img {
+        width: 50%;
+      }
+      .music-img img {
+        width: 100%;
+        border-radius: 50px;
+      }
+      .text-content h1 {
+        color: white;
+        line-height: 50px;
+      }
+      .text-content p {
+        color: white;
+        line-height: 34px;
+      }
+      .text-content h1 span {
+        color: #ffc107;
+      }
+      .btn2 {
+        background-color: #ffc107;
+        padding: 10px 29px;
+        border: none;
+        border-radius: 10px;
+      }
+      .btn3 {
+        background-color: #5a5555;
+        padding: 10px 29px;
+        border: none;
+        color: #fff;
+        border-radius: 10px;
+      }
+      .pricing-section {
+    display: flex;
+    padding: 20px;
+}
+h4.Price-head {
+    text-align: center;
+    color: #FFC107;
+    padding:20px;
+}
+h2.simple-head {
+    color: white;
+    text-align: center;
+}
+.pricing-cards {
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.starter-card {
+    background-color: #575454;
+    color: white;
+    width: 17%;
+      padding: 2px 32px 51px 32px;
+    align-items: center;
+    border-radius: 20px 0px;
+}
+.starter-card h6 {
+    font-size: medium;
+    margin-bottom: 23px;
+     color: lightgray;
+}
+.starter-card h1 {
+    
+    margin-bottom: 23px;
+}
+.starter-card p {
+    width: 84%;
+    color: lightgray;
+}
+.starter-card ul {
+    line-height: 2;
+    margin-left: -20px;
+    color: lightgray;
+}
+.starter-card ul li {
+    list-style: square;
+}
+
+.starter-card button {
+    background-color: #FFC107;
+    padding: 12px 51px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left:20px;
+}
+.list li a{
+    text-decoration: none;
+    color:white;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <img src="images/musicLogo.jpg" />
+        </div>
+        <div class="menu">
+          <ul class="list">
+            <li>Home</li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="https://music.apple.com/us/login">Login</a></li>
+            <li><a href="list.html">About us</a></li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <button>Start Trial</button>
+      </div>
+      <div class="Home-content">
+        <div class="text-content">
+          <button class="btn1">New Ai-Powdered chord recognition</button>
+          <h1>Master guitar with <span>interactive</span> lessons</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+            numquam eum accusantium officia incidunt maiores.
+          </p>
+          <button class="btn2">Start learning</button>
+          <button class="btn3">See how it works</button>
+        </div>
+        <div class="music-img">
+          <img src="images/music1.webp" />
+        </div>
+      </div>
+      <section id="pricing">
+        <h4 class="Price-head">Pricing</h4>
+        <h2 class="simple-head">Simple,transparent pricing</h2>
+        <h4 class="Price-head">Start with a free trial. No credit card required</h4>
+        
+        <div class="pricing-cards">
+          <div class="starter-card">
+            <h6>Starter</h6>
+            <h1>Free</h1>
+            <p>Perfect for trying </p>
+            <ul>
+              <li>10 beginner lessons</li>
+              <li>10 beginner lessons</li>
+              <li>10 beginner lessons</li>
+              <li>10 beginner lessons</li>
+            </ul>
+            <button>Know More</button>
+          </div>
+          <div class="starter-card">
+            <h6>Pro</h6>
+            <h1>$30<span>/mo</span></h1>
+            <p>For serious learners</p>
+            <ul>
+              <li>All 20+ video lessons</li>
+              <li>All 20+ video lessons</li>
+              <li>All 20+ video lessons</li>
+              <li>All 20+ video lessons</li>
+            </ul>
+            <button>Know More</button>
+          </div>
+          <div class="starter-card">
+            <h6>Lifetime</h6>
+            <h1>$440</h1>
+            <p>One time payment</p>
+            <ul>
+              <li>Everthing in pro</li>
+              <li>Everthing in pro</li>
+              <li>Everthing in pro</li>
+              <li>Everthing in pro</li>
+            </ul>
+         <button>Know More</button>
+        </div>
+      </div>
+      </section>
+    </div>
+  </body>
+</html>

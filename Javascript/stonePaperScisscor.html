@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ h1 {
+    text-align: center;
+    line-height: 5rem;
+}
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 46px;
+    padding-top: 46px;
+}
+.img1 {
+    width: 14%;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.img1:hover{
+    opacity: 0.5;
+}
+.img1 img{
+    width: 100%;
+    border-radius: 50%;
+}
+.score-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    text-align: center;
+    padding-top: 26px;
+}
+p.user-score {
+    font-size: 30px;
+}
+p.comp-score {
+    font-size: 30px;
+}
+    </style>
+</head>
+<body>
+   
+        <h1>Rock Paper Scisscor</h1>
+        <div class="choices">
+            
+            <div class="img1" id="rock">         
+                    <img src="/images/rock.jpg">
+                </div>
+                <div class="img1" id="paper">
+                    <img src="/images/paper.jpg">
+                </div>
+                <div class="img1" id="scisscor">
+                    <img src="/images/scisscor.jpg">
+                </div>
+
+            </div>
+        
+        <div class="score-board">
+        <div class="score">
+            <h3>you</h3>
+            <p class="user-score">0</p>
+        </div>
+        <div class="score">
+            <h3>Computer</h3>
+            <p class="comp-score">0</p>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let userScore=0;
+        let compScore=0;
+
+        let choices=document.querySelectorAll(".choice")
+    </script>
+</body>
+</html>

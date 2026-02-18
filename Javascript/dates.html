@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const date= new Date();
+console.log(date)
+const hour=String(date.getHours()).padStart(2,"0")
+const minutes=String(date.getMinutes()).padStart(2,"0")
+const second=String(date.getSeconds()).padStart(2,"0")
+const time=`${hour}:${minutes}:${second}`
+
+if(time>="6:00:00"&&time<="11:59:59"){
+    console.log("Good Morning")
+}
+else if(time>="12:00:00"&&time<="15:59:59"){
+ console.log("Good Afternoon")
+}
+else if(time>="16:00:00"&&time<="20:59:59"){
+    console.log("Good Evening")
+}
+else if(time>="21:00:00"&&time<="23:59:59"){
+    console.log("Good Night")
+}
+    </script>
+</body>
+</html>

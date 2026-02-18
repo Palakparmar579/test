@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:1140px;
+            margin:0 auto;
+        }
+   .navbar {
+    position: sticky;
+    top: 0;
+    
+    background-color: white;
+}
+   .nav-main {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 31px 34px 4px 28px;
+    
+}
+     .logo-img {
+    width: 16%;
+    height: 71px;
+    padding-right: 117px;
+}
+.menu ul li {
+    display: inline-block;
+    padding: 28px 9px 0 47px;
+}
+img.icon {
+    width: 28px;
+    height: 28px;
+    padding: 18px 0px 0 58px;
+}
+
+.dog-content {
+    display: flex;
+    padding: 45px;
+}
+.dog-img {
+    width: 50%;
+}
+.dog-img img {
+    width: 100%;
+}
+.home-section{
+    background-color: rgb(249, 243, 236);
+}
+.dog-heading {
+    padding-top: 79px;
+}
+.dog-heading h3 {
+    color: goldenrod;
+    font-family: math;
+    font-weight: lighter;
+}
+
+.dog-heading h1 {
+    font-size: xxx-large;
+    font-family: cursive;
+    font-weight: lighter;
+}
+.dog-heading h1::after {
+    content: "    your pet";
+    color: goldenrod;
+    padding-left: 30px;
+}
+.dog-heading button {
+    padding: 19px 32px 19px 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(249, 243, 236);
+    font-size: larger;
+    font-family: cursive;
+    margin-top: 28px;
+    font-weight: 100;
+}
+.dog-heading button:hover{
+     background-color: black;
+    color:white;
+}
+.card-heading {
+    display: flex;
+    padding: 50px 7px 11px 7px;
+    justify-content: space-between;
+}
+.card-heading h1 {
+    font-family: cursive;
+    font-size: xxx-large;
+    font-weight: lighter;
+}
+.card-heading button {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(249, 243, 236);
+    font-size: medium;
+    font-family: cursive;
+}
+.card-heading button:hover{
+    background-color: black;
+    color:white;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 48px;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.card-pet {
+    padding-top: 56px;
+    width:20%;
+}
+.card-pet img {
+    border-radius: 25px;
+    width: 100%;
+    padding-bottom: 12px;
+}
+.card-pet h2 {
+    font-size: xx-large;
+    font-weight: 200;
+    font-family: cursive;
+    
+}
+.card-pet p {
+    padding: 10px 0 12px 0;
+    font-size: larger;
+}
+.card-pet p::before {
+    content: "\f005";
+    color: rgb(248 190 123 / 90%);
+    font: normal normal normal 14px / 1 FontAwesome;
+    padding-right: 9px;
+    font-size: inherit;
+}
+.card-pet h3 {
+    color: rgb(248 190 123 / 90%);
+    padding: 0 0 17px 0;
+    font-size: x-large;
+}
+.card-pet button {
+    padding: 15px 25px 15px 25px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 9px;
+    text-transform: capitalize;
+    font-size: larger;
+}
+.card-pet button:hover{
+    background-color: black;
+    color:white;
+}
+    </style>
+</head>
+<body>
+   <div class="navbar">
+    <div class="container">
+        <div class="nav-main">
+            <img class="logo-img"src="https://themewagon.github.io/waggy/images/logo.png">
+            <div class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Others</li>
+                </ul>
+            </div>
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/10628/10628940.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/9131/9131566.png">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png">
+        </div>
+    </div>
+   </div> 
+   <div class="home-section">
+    <div class="container">
+        <div class="dog-content">
+        <div class="dog-img">
+            <img src="https://themewagon.github.io/waggy/images/banner-img.png">
+        </div>
+        
+        <div class="dog-heading">
+            <h3>Save 20-30% off</h3>
+                <h1>Best destination for</h1>
+                  <button>Shop Now ➜</button>
+            
+        </div>
+        </div>
+    </div>
+   </div>
+   <div class="card-content">
+    <div class="container">
+        <div class="card-heading">
+   <h1>Pet Clothing</h1>
+   <button>Shop Now ➜</button>
+   </div>
+   <div class="cards">
+       <div class="card-pet">
+        <img src="https://themewagon.github.io/waggy/images/item1.jpg">
+        <h2>Grey hoodie</h2>
+        <p>5.0</p>
+        <h3>$18.00</h3>
+        <button>Add to cart</button>
+       </div> 
+       <!----------------------------------------------------->
+       <div class="card-pet">
+        <img src="https://themewagon.github.io/waggy/images/item2.jpg">
+        <h2>Grey hoodie</h2>
+        <p>5.0</p>
+        <h3>$18.00</h3>
+        <button>Add to cart</button>
+       </div> 
+       <!----------------------------------------------------------->
+       <div class="card-pet">
+        <img src="https://themewagon.github.io/waggy/images/item3.jpg">
+        <h2>Grey hoodie</h2>
+        <p>5.0</p>
+        <h3>$18.00</h3>
+        <button>Add to cart</button>
+       </div> 
+       <!-------------------------------------------------------->
+       <div class="card-pet">
+        <img src="https://themewagon.github.io/waggy/images/item8.jpg">
+        <h2>Grey hoodie</h2>
+        <p>5.0</p>
+        <h3>$18.00</h3>
+        <button>Add to cart</button>
+       </div> 
+   </div>
+   </div>
+   </div>
+
+   <video width="320" height="240" autoplay>
+  <source src="/images/328740_medium.mp4" type="video/mp4">
+</video>
+
+
+<audio controls>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>

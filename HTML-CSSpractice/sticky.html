@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    
+}
+
+
+.label-section {
+    min-width: 150px;
+    display: inline-block;
+}
+
+.course-heading {
+    font-family: math;
+    text-align: center;
+    color: #000382ba;
+}
+.content1{
+    padding:26px 9px;
+}
+.input-section {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 148px 0 0;
+}
+span {
+    color: #ab0000d9;
+}
+.submit-btn {
+    color: white;
+    background-color: #000382ba;
+    border: none;
+    border-radius: 20px;
+    padding: 17px 38px;
+    margin-left: 162px;
+}
+.navbar {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 33px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+ul.links li {
+    display: inline;
+    padding: 0 10px;
+    font-size: 21px;
+    text-transform: capitalize;
+    font-family: fangsong;
+}
+h3.about {
+    position: absolute;
+    /* top: 140px; */
+    /* right: -62px; */
+    background-color: red;
+    color: #fff;
+    padding: 8px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main {
+    width: 20%;
+    position: relative;
+}
+.main-left img{
+    width: 50%;
+}
+.main-left {
+    color: aliceblue;
+    /* margin-top: -10px; */
+    padding: 44px 65px 0 31px;
+    justify-content: center;
+    display: flex;
+    width: 35%;
+    position: sticky;
+    top: 80px;
+    height: 40vh;
+}
+    .content-left{
+        width:560px;
+       
+    }
+    .content-left p {
+       margin-left: 80px; 
+      
+       margin-left:60px;
+       line-height: 30px;
+       color:black;
+    }
+    .content-left p span{
+        color: blue;
+    }
+   .content-left h1 {
+    color: black;
+    margin-left: 60px;
+}
+   .content-leftImg img {
+    border-radius: 50%;
+    width: 133px;
+    margin-left: -25px;
+}
+  .form{
+    width:50%
+   
+  }
+  .line {
+    width: 2px;
+    height: 117vh;
+    margin-right: 36px;
+    background-color: black;
+    
+}
+.img-logo {
+    margin: 20px 0px 20px 207px;
+}
+.top-header{
+    height: 600px;
+    background-color: blue;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="top-header">
+
+    </div>
+   
+   
+     <div class="container">
+    
+    <div class="main-left">
+        <div class="content-left">
+        <h1>Introduction</h1>
+        <p>Hi, I'm <span>Palak Parmar</span>, a Computer Science student at HGPI and a passionate Frontend Developer. I enjoy building responsive, user-friendly websites and turning ideas into clean, functional designs.</p>
+    </div>
+    <div class="content-leftImg">
+       <img src="../images/user.png">
+    </div>
+    <div class="line"></div>
+    </div>
+    
+        <div class="form">
+        <div class="content-form">
+        <img  class='img-logo' src="https://cdn-icons-png.flaticon.com/128/13809/13809425.png">
+        <h2 class="course-heading">Course Application</h2>
+        <div class="content1">
+            <label class="label-section">Full name <span>*</span></label>
+           <input type="text" placeholder="Name" class="input-section" required>
+            
+           </div> 
+        </div>
+        <!---------------------------------------------------> 
+        <div class="content1">
+            <label class="label-section">Select course<span>*</span></label>
+            <input type="radio" name="a">
+            <label>Course A</label>
+            <input type="radio" name="a">
+            <label>Course b</label>
+            <input type="radio" name="a">
+            <label>Course c</label>
+        </div>  
+        <!---------------------------------------------------> 
+        <div class="content1">
+            <label class="label-section">Date of birth  <span>*</span></label>
+            <input type="date" class="input-section" required>
+        </div>
+        <!--------------------------------------------------->
+        <div class="content1">
+            <label class="label-section">Gender <span>*</span></label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Male</label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Female</label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Other</label>
+        </div>
+        <!---------------------------------------------------->
+        <div class="content1">
+            <label class="label-section">Education<span>*</span></label>
+            <input type="text" class="input-section" placeholder="Enter your eduction" required>
+        </div>
+        <!---------------------------------------------------->    
+        <div class="content1">
+            <label class="label-section">Conatct number<span>*</span></label>
+            <input type="tel" pattern="\+91[0-9]{9}" class="input-section" placeholder="Enter Number" required>
+        </div>
+        <!---------------------------------------------------->    
+        <div class="content1">
+            <label class="label-section">Address<span>*</span></label>
+            <input type="text" placeholder="Permanent Address" class="input-section" required>
+            
+            
+           
+        </div>
+        
+        <!----------------------------------------------------> 
+        <button class="submit-btn">Submit</button>   
+     </div>
+    </div>
+
+     <div class="top-header">
+
+    </div>
+     
+                                
+</body>
+</html>

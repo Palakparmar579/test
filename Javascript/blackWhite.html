@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+        height:50vh;
+        width:100%;
+        border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onClick="clickHere()">
+        hello
+    </div>
+    <script>
+     function clickHere(){
+       const box= document.getElementById("box");
+      box.style.background=  box.style.background==="black"?"white":"black"
+     }
+
+    </script>
+</body>
+</html>

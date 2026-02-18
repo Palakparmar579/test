@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      .container {
+    height: 97vh;
+    width: 50%;
+    margin: 0 auto;
+    padding: 66px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.img-logo {
+    border-radius: 50%;
+    width: 22%;
+    background-color: #00bcd417;
+    margin-left: 150px;
+}
+.label-section {
+    min-width: 150px;
+    display: inline-block;
+}
+.main-content{
+    
+}
+.course-heading {
+    font-family: math;
+    text-align: center;
+    color: #000382ba;
+}
+.content{
+    padding:26px 9px;
+}
+.input-section {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0 148px 0 0;
+}
+span {
+    color: #ab0000d9;
+}
+.submit-btn {
+    color: white;
+    background-color: #000382ba;
+    border: none;
+    border-radius: 20px;
+    padding: 17px 38px;
+    margin-left: 162px;
+}
+.navbar {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 33px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+ul.links li {
+    display: inline;
+    padding: 0 10px;
+    font-size: 21px;
+    text-transform: capitalize;
+    font-family: fangsong;
+}
+h3.about {
+    position: absolute;
+    /* top: 140px; */
+    /* right: -62px; */
+    background-color: red;
+    color: #fff;
+    padding: 8px 25px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main {
+    width: 50%;
+    position: relative;
+}
+.main img{
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><h2>logo</h2></div>
+        <div class="">
+            <ul class="links">
+                <li>home</li>
+                <li>about</li>
+                <li>contact us</li>
+            </ul>
+        </div>
+    </div>
+    <form>
+     <div class="container">
+        <div class="main-content">
+        <img  class='img-logo' src="https://cdn-icons-png.flaticon.com/128/13809/13809425.png">
+        <h2 class="course-heading">Course Application</h2>
+        <div class="content">
+            <label class="label-section">Full name <span>*</span></label>
+           <input type="text" placeholder="Name" class="input-section" required>
+            
+            
+        </div>
+        <!---------------------------------------------------> 
+        <div class="content">
+            <label class="label-section">Select course<span>*</span></label>
+            <input type="radio" name="a">
+            <label>Course A</label>
+            <input type="radio" name="a">
+            <label>Course b</label>
+            <input type="radio" name="a">
+            <label>Course c</label>
+        </div>  
+        <!---------------------------------------------------> 
+        <div class="content">
+            <label class="label-section">Date of birth  <span>*</span></label>
+            <input type="date" class="input-section" required>
+        </div>
+        <!--------------------------------------------------->
+        <div class="content">
+            <label class="label-section">Gender <span>*</span></label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Male</label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Female</label>
+            <input type="radio" name="a" class="radio-input">
+            <label>Other</label>
+        </div>
+        <!---------------------------------------------------->
+        <div class="content">
+            <label class="label-section">Education<span>*</span></label>
+            <input type="text" class="input-section" placeholder="Enter your eduction" required>
+        </div>
+        <!---------------------------------------------------->    
+        <div class="content">
+            <label class="label-section">Conatct number<span>*</span></label>
+            <input type="tel" pattern="\+91[0-9]{9}" class="input-section" placeholder="Enter Number" required>
+        </div>
+        <!---------------------------------------------------->    
+        <div class="content">
+            <label class="label-section">Address<span>*</span></label>
+            <input type="text" placeholder="Permanent Address" class="input-section" required>
+            
+            
+           
+        </div>
+
+        
+        <!----------------------------------------------------> 
+        <button class="submit-btn">Submit</button>   
+     </div>
+     </div>
+    </form>
+                                
+</body>
+</html>

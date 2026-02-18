@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding:7px;
+        }
+        .start:disabled{
+            cursor: not-allowed;
+        }
+       button {
+    padding: 10px 15px 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background: #f0bdbd;
+    border: none;
+    border-radius: 10px;
+}
+input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 16%;
+}
+    </style>
+</head>
+<body>
+    <p>Enter a number between 0 to 100</p>
+    <form>
+        <input id="user-input" type="number" placeholder="Enter a number" min="0" max="100">
+        <br>
+        <button id="submit">Submit</button>
+        <button id="start" disabled>Start game</button>
+        <p id="result"></p>
+        <p id="all-guesses"></p>
+    </form>
+    <script>
+        (function(){
+        let randomNum=Math.round(Math.random()*100)
+        const userInput=document.getElementById("user-input")
+        let form=document.querySelector("form")
+          let result=document.getElementById("result");
+          let totalGuess=document.getElementById("all-guesses")
+          let submit=document.getElementById("submit")
+         
+       const allGuesses=[];
+       
+        form.addEventListener("submit",(e)=>{
+            e.preventDefault();
+             let userInputValue=parseInt(userInput.value)
+             if(userInputValue<randomNum){
+                result.innerText="Too low!"
+             }
+             else if(userInputValue>randomNum){
+                    result.innerText="Too High!"
+             }
+              else{   
+                    result.innerText="Congrats!"
+                    submit.disabled=true;
+                     start.disabled=false;
+             }
+             allGuesses.push(userInputValue).toString();
+             
+             totalGuess.innerText="Your All Guesses:"+allGuesses;
+             userInput.value="";
+           
+        })
+
+     start.addEventListener("click",()=>{
+        result.innerText=""
+        totalGuess.innerText=""
+        allGuesses.length=0;
+        submit.disabled=false;
+        start.disabled=true;
+        randomNum=Math.round(Math.random()*100);
+
+     })
+     })()
+       
+    </script>
+</body>
+</html>
